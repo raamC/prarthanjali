@@ -1,0 +1,18 @@
+.navbar {
+    .navbar-menu {
+        background-color: $gold;
+    }
+
+    a {
+        color: $dark-grey;
+        font-size: large;
+    }
+
+    .navbar-link--custom {
+        color: white;
+
+        &:hover {
+            color: darken($color: $dark-grey, $amount: 50%);
+        }
+    }
+}
