@@ -1,10 +1,11 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  pathPrefix: "/prarthanjali",
+  siteMetadata: {
+    title: `Prarthanjali`,
+    description: `A shared effort to explain and preserve our bhajans`,
+    author: `Raam Chauhan`,
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+  ],
 }
