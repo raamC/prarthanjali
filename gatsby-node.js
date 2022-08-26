@@ -1,9 +1,10 @@
 const hanumanChalisa = require("./src/content/hanumanChalisa.json")
+const abaSaumpaDiya = require("./src/content/abaSaumpaDiya.json")
 
 exports.createPages = ({ actions }) => {
     const { createPage } = actions
 
-    const bhajanList = [hanumanChalisa]
+    const bhajanList = [hanumanChalisa, abaSaumpaDiya]
 
     bhajanList.forEach(bhajanData => {
         createPage({

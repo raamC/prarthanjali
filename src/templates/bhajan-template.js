@@ -35,27 +35,14 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                         <div class="column is-one-third">
                             <div class="box">
                                 <h3 class="title">Videos</h3>
-                                <iframe
+                                {bhajanData.youtubeLinks.map(link => (
+                                    <iframe
                                     width="100%"
-                                    src="https://www.youtube.com/embed/AETFvQonfV8"
+                                    src={link}
                                     frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                >
-                                </iframe>
-                                <iframe
-                                    width="100%"
-                                    src="https://www.youtube.com/embed/9ca5_p87c6o"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                >
-                                </iframe>
-                                <iframe
-                                    width="100%"
-                                    src="https://www.youtube.com/embed/M9Qg_0nFaGc"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                >
-                                </iframe>
+                                ></iframe>
+                                ))}
                             </div>
                             <div class="box notification is-warning">
                                 <h3 class="title">Display options</h3>
