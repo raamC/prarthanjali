@@ -1,5 +1,7 @@
 import React, { useState } from "react"
+import BhajanTextContainer from "../components/bhajanTextContainer"
 import Layout from "../components/layout"
+import VideoContainer from "../components/videoContainer"
 
 export default function BhajanTemplate({ pageContext: { bhajanData } }) {
     const [showTranslation, setShowTranslation] = useState(true)
@@ -19,31 +21,10 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                 <div class="container">
                     <div class="columns" style={{ display: 'flex', 'flex-wrap': 'wrap-reverse' }}>
                         <div class="column is-two-thirds" style={{ 'min-width': '60%' }}>
-                            <div class="notification">
-                                {bhajanData.sections.map(section => (
-                                    <div class="bhajan-section">
-                                        <div class="section-transliteration">
-                                            {section.transliteration}
-                                        </div>
-                                        <div class="section-translation" style={showTranslation ? {} : { display: 'none' }}>
-                                            {section.translation}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
+                            <BhajanTextContainer bhajanText={bhajanData.sections} showTranslation={showTranslation} />
                         </div>
                         <div class="column is-one-third">
-                            <div class="box">
-                                <h3 class="title">Videos</h3>
-                                {bhajanData.youtubeLinks.map(link => (
-                                    <iframe
-                                    width="100%"
-                                    src={link}
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                ></iframe>
-                                ))}
-                            </div>
+                            <VideoContainer youtubeLinksArray={bhajanData.youtubeLinks} />
                             <div class="box notification is-warning">
                                 <h3 class="title">Display options</h3>
                                 <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
