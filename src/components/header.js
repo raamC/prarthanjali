@@ -25,10 +25,10 @@ const Header = () => {
       <div id="navMenu" class={`navbar-menu ${burgerIsActive ? 'is-active' : ''}`}>
         <div class="navbar-start">
           <div class="navbar-item">
-            <Link class="navbar-link--custom" to="bhajans">Bhajans</Link>
+            <Link class="navbar-link--custom" to="/bhajans">Bhajans</Link>
           </div>
           <div class="navbar-item">
-            <Link class="navbar-link--custom" to="mantras">Mantras</Link>
+            <Link class="navbar-link--custom" to="/mantras">Mantras</Link>
           </div>
         </div>
       </div>
