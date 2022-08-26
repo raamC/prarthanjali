@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import HowItWorksExample from "../components/howItWorksExample"
 import satyanarayan from "../images/satyanarayan.jpg"
 import ganesh from "../images/ganesh.jpg"
 
@@ -65,14 +64,6 @@ const IndexPage = () => (
       </div>
 
     </div>
-
-    <section class="section">
-      <div class="container">
-        <h1 class="title">How it works</h1>
-        <HowItWorksExample />
-      </div>
-    </section>
-
   </Layout>
 )
 

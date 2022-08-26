@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 
 export default function BhajanTemplate({ pageContext: { bhajanData } }) {
-    const [showGujarati, setShowGujarati] = useState(true)
     const [showTranslation, setShowTranslation] = useState(true)
 
     return (
@@ -12,7 +11,6 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                     <div class="">
                         <div class="notification page-title cursive-heading is-primary">
                             <h1 class="title is-1">{bhajanData.title.transliteration}</h1>
-                            <h2 class="subtitle is-3">{bhajanData.title.gujarati}</h2>
                         </div>
                     </div>
                 </div>
@@ -24,9 +22,6 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                             <div class="notification">
                                 {bhajanData.sections.map(section => (
                                     <div class="bhajan-section">
-                                        <div class="section-gujarati" style={showGujarati ? {} : { display: 'none' }} >
-                                            {section.gujarati}
-                                        </div>
                                         <div class="section-transliteration">
                                             {section.transliteration}
                                         </div>
@@ -64,9 +59,6 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                             </div>
                             <div class="box notification is-warning">
                                 <h3 class="title">Display options</h3>
-                                <button class="button options-button" onClick={() => setShowGujarati(!showGujarati)}>
-                                    {showGujarati ? "Hide" : "Show"} Gujarati
-                                </button>
                                 <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
                                     {showTranslation ? "Hide" : "Show"} translation
                                 </button>
