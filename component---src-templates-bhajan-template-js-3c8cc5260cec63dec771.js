@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[922],{7556:function(e,t,n){n.r(t),n.d(t,{default:function(){return l}});var a=n(7294);function l(e){var t=e.pageContext.bhajan;return a.createElement(a.Fragment,null,a.createElement("section",null,t.name),a.createElement("section",null,t.jsonData))}}}]);
+//# sourceMappingURL=component---src-templates-bhajan-template-js-3c8cc5260cec63dec771.js.map
