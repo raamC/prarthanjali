@@ -12,7 +12,7 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                 <div class="container">
                     <div class="">
                         <div class="notification page-title cursive-heading is-primary">
-                            <h1 class="title is-1">{bhajanData.title.transliteration}</h1>
+                            <h1 class="title is-1">{bhajanData.title}</h1>
                         </div>
                     </div>
                 </div>
