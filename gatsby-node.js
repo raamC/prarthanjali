@@ -1,5 +1,5 @@
-const hanumanChalisa = require("./src/content/hanumanChalisa.json")
-const abaSaumpaDiya = require("./src/content/abaSaumpaDiya.json")
+const hanumanChalisa = require("./src/content/hanuman-chalisa.json")
+const abaSaumpaDiya = require("./src/content/aba-saumpa-diya.json")
 
 exports.createPages = ({ actions }) => {
     const { createPage } = actions
