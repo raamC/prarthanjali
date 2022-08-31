@@ -4,7 +4,8 @@ import Layout from "../components/layout"
 import VideoContainer from "../components/videoContainer"
 
 export default function BhajanTemplate({ pageContext: { bhajanData } }) {
-    const [showTranslation, setShowTranslation] = useState(true)
+    const hasTranslation = bhajanData.sections[0].translation !== ""
+    const [showTranslation, setShowTranslation] = useState(hasTranslation)
 
     return (
         <Layout>
@@ -24,13 +25,16 @@ export default function BhajanTemplate({ pageContext: { bhajanData } }) {
                             <BhajanTextContainer bhajanText={bhajanData.sections} showTranslation={showTranslation} />
                         </div>
                         <div class="column is-one-third">
-                            <VideoContainer youtubeLinksArray={bhajanData.youtubeLinks} />
-                            <div class="box notification is-warning">
-                                <h3 class="title">Display options</h3>
-                                <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
-                                    {showTranslation ? "Hide" : "Show"} translation
-                                </button>
-                            </div>
+                            {bhajanData.youtubeLinks.length > 0 && <VideoContainer youtubeLinksArray={bhajanData.youtubeLinks} />}
+                            {hasTranslation &&
+                                <div class="box notification is-warning">
+                                    <h3 class="title">Display options</h3>
+                                    <button class="button options-button" onClick={() => setShowTranslation(!showTranslation)}>
+                                        {showTranslation ? "Hide" : "Show"} translation
+                                    </button>
+
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
