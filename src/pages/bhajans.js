@@ -10,6 +10,7 @@ const BhajansPage = () => (
         <ul>
           <li><Link to="/aba-saumpa-diya/">Aba Saumpa Diya</Link></li>
           <li><Link to="/hanuman-chalisa/">Hanuman Chalisa</Link></li>
+          <li><Link to="/hari-om-tat-sat/">Hari Om Tat Sat</Link></li>
           <li><Link to="/nirvana-shatakam/">Nirvana Shatakam</Link></li>
         </ul>
       </div>
