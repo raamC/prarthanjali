@@ -21,19 +21,20 @@ A shared effort to explain and preserve our bhajans
 Hosted site is currently https://raamc.github.io/prarthanjali.
 
 # To add a new bhajan
+
 1. Create a new json file in `./content`
 2. Update the list in `gatsby-node.js` to make sure it is loaded
 3. Update the list in `bhajans.js` to make sure it is discoverable
 
-Each bhajan is described in a json file in `/content`. This json file has the shape of 
+Each bhajan is described in a json file in `/content`. This json file has the shape of
 
 ```
 {
     "title": "Hanuman Chalisa",
     "url": "hanuman-chalisa",
     "youtubeLinks": [
-        "https://www.youtube.com/embed/AETFvQonfV8", 
-        "https://www.youtube.com/embed/9ca5_p87c6o", 
+        "https://www.youtube.com/embed/AETFvQonfV8",
+        "https://www.youtube.com/embed/9ca5_p87c6o",
         "https://www.youtube.com/embed/M9Qg_0nFaGc"
     ],
     "sections": [

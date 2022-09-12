@@ -5,21 +5,21 @@ const hariOmTatSat = require("./src/content/hari-om-tat-sat.json")
 const asatyoMaheThi = require("./src/content/asatyo-mahe-thi.json")
 
 exports.createPages = ({ actions }) => {
-    const { createPage } = actions
+  const { createPage } = actions
 
-    const bhajanList = [
-        hanumanChalisa, 
-        abaSaumpaDiya, 
-        nirvanaShatakam, 
-        hariOmTatSat,
-        asatyoMaheThi
-    ]
+  const bhajanList = [
+    hanumanChalisa,
+    abaSaumpaDiya,
+    nirvanaShatakam,
+    hariOmTatSat,
+    asatyoMaheThi,
+  ]
 
-    bhajanList.forEach(bhajanData => {
-        createPage({
-            path: `/${bhajanData.url}`,
-            component: require.resolve(`./src/templates/bhajan-template.js`),
-            context: { bhajanData },
-        })
+  bhajanList.forEach(bhajanData => {
+    createPage({
+      path: `/${bhajanData.url}`,
+      component: require.resolve(`./src/templates/bhajan-template.js`),
+      context: { bhajanData },
     })
+  })
 }

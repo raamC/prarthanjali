@@ -7,17 +7,12 @@ const MantrasPage = () => (
     <section class="section">
       <div class="container">
         <h1 class="title is-1">Mantras</h1>
-        
+
         <ul>
           {/* <li><Link to="/hanuman-chalisa/">Hanuman Chalisa</Link></li> */}
         </ul>
       </div>
     </section>
-
-
-
-
-
   </Layout>
 )
 

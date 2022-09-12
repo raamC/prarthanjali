@@ -5,7 +5,5 @@ module.exports = {
     description: `A shared effort to explain and preserve our bhajans`,
     author: `Raam Chauhan`,
   },
-  plugins: [
-    `gatsby-plugin-sass`,
-  ],
+  plugins: [`gatsby-plugin-sass`],
 }
