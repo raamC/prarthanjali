@@ -21,6 +21,9 @@ const BhajansPage = () => (
             <Link to="/hari-om-tat-sat/">Hari Om Tat Sat</Link>
           </li>
           <li>
+            <Link to="/mangal-mandir-kholo/">Mangal Mandir Kholo</Link>
+          </li>
+          <li>
             <Link to="/nirvana-shatakam/">Nirvana Shatakam</Link>
           </li>
           <li>
