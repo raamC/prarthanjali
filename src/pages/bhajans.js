@@ -12,6 +12,9 @@ const BhajansPage = () => (
             <Link to="/aba-saumpa-diya/">Aba Saumpa Diya</Link>
           </li>
           <li>
+            <Link to="/asatyo-mahe-thi/">Asatyo Mahe Thi</Link>
+          </li>
+          <li>
             <Link to="/hanuman-chalisa/">Hanuman Chalisa</Link>
           </li>
           <li>
@@ -21,7 +24,7 @@ const BhajansPage = () => (
             <Link to="/nirvana-shatakam/">Nirvana Shatakam</Link>
           </li>
           <li>
-            <Link to="/asatyo-mahe-thi/">Asatyo Mahe Thi</Link>
+            <Link to="/shri-ramachandra-krupalu-bhaja-mana/">Shri Ramachandra Krupalu Bhaja Mana</Link>
           </li>
         </ul>
       </div>
