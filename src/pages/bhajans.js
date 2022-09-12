@@ -12,6 +12,7 @@ const BhajansPage = () => (
           <li><Link to="/hanuman-chalisa/">Hanuman Chalisa</Link></li>
           <li><Link to="/hari-om-tat-sat/">Hari Om Tat Sat</Link></li>
           <li><Link to="/nirvana-shatakam/">Nirvana Shatakam</Link></li>
+          <li><Link to="/asatyo-mahe-thi/">Asatyo Mahe Thi</Link></li>
         </ul>
       </div>
     </section>
