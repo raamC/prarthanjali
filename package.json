@@ -23,6 +23,7 @@
     "sass": "^1.54.5"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   }
 }
